@@ -1,13 +1,12 @@
-# WordGuessConstructors
-
+# Word Guess Hangman CLI Game
+---
 ## Overview 
 This is a command line interface (CLI) game of Hangman! 
 Each game, a random word is selected by the computer. To win the game, the player must guess all of the letters in the word, using less than 10 guesses. 
 
 ---
 ## Demo
-This is a link to a demo of the game: ![Word Guess Cli](Images/01-WordGuess-Cli.gif)
-
+![Word Guess Cli](/HangmanCLI.gif)
 ---
 ### Why did I make this?: 
 * This was an optional assignment for UCSD's Full Stack Bootcamp. Building this application allowed me to practice using Javascript constructors. 

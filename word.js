@@ -10,11 +10,11 @@ var Letter = require("./letter.js");
 var letters = [];
 var underscore;
 var Word = function(word, userChar) {
-  console.log("word " + word);
+  //console.log("word " + word);
   //separate each character to be part of an array
   // * An array of `new` Letter objects representing the letters of the underlying word
   var splitword = word.split("");
-  console.log('split word: '+ splitword);
+  //console.log('split word: '+ splitword);
   //loop through the array and make new letter 
   for (var i = 0; i < splitword.length; i++) {
      letters.push( new Letter(word[i]));
@@ -36,8 +36,8 @@ var Word = function(word, userChar) {
       guessedWord.push(letters[i].showCharacter());
       }
     underscore = guessedWord.indexOf("_");
-    console.log("index of _" + guessedWord.indexOf("_"));
-    console.log("underscore value" + underscore);
+    //console.log("index of _" + guessedWord.indexOf("_"));
+    //console.log("underscore value" + underscore);
     console.log(guessedWord);
     this.underscore();
   }

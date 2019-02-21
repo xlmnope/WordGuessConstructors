@@ -16,12 +16,13 @@ function newGame() {
   guessedLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   //reset remaining guesses to 10
   remainingguesses = 10
-  var wordArr = ["hammerhead", "wobbegong", "sand", "mackerel", "mako", "thresher", "sawshark", "catshark", "ground shark", "angelshark", "requiem", "nurse", "bramble", "angular"]
+  var wordArr = ["mako"]
   // Randomly select a word for the game
   const randomWord = wordArr[Math.floor(Math.random() * wordArr.length)];
   // console.log(randomWord);
   //  uses the `Word` constructor to store it
   currentWord = new Word(randomWord);
+  currentWord.guess(userChar);
   promptuser();
   
  
